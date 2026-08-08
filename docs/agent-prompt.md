@@ -1,6 +1,6 @@
 # Agent install prompt
 
-Paste this into Codex or another coding agent from the root of an existing shadcn project:
+Paste this into your coding agent from the root of an existing shadcn project:
 
 ```text
 Add macOS for shadcn to this project without replacing or rewriting official shadcn component source.
