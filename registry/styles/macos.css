@@ -1,0 +1,22 @@
+/*
+ * macOS for shadcn — macOS 27 foundation
+ *
+ * Component styling is intentionally pending visual-reference extraction.
+ * This checkpoint establishes the public scope, system font stack, and token
+ * namespaces without claiming calibrated control fidelity.
+ */
+
+@layer base {
+  html[data-macos-style="27"] {
+    --macos-font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --macos-font-mono: ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
+
+    --macos-accent: oklch(0.62 0.2 252);
+    --macos-canvas: oklch(0.965 0.006 250);
+    --macos-content: oklch(0.99 0.003 250);
+    --macos-sidebar-tint: oklch(0.94 0.018 245);
+    --macos-glass-opacity: 0.78;
+
+    font-family: var(--macos-font-sans);
+  }
+}

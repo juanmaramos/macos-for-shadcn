@@ -1,0 +1,49 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "macos-for-shadcn",
+  "homepage": "https://github.com/juanmaramos/macos-for-shadcn",
+  "items": [
+    {
+      "name": "macos",
+      "type": "registry:style",
+      "title": "macOS for shadcn",
+      "description": "The latest supported macOS-inspired style layer for official shadcn Base UI components.",
+      "files": [
+        {
+          "path": "registry/styles/macos.css",
+          "type": "registry:style",
+          "target": "@components/../styles/macos.css"
+        }
+      ],
+      "css": {
+        "@import \"@/styles/macos.css\"": {}
+      },
+      "meta": {
+        "generation": "27",
+        "base": "base",
+        "status": "preview"
+      }
+    },
+    {
+      "name": "macos-27",
+      "type": "registry:style",
+      "title": "macOS 27 for shadcn",
+      "description": "A generation-pinned macOS 27 style layer for official shadcn Base UI components.",
+      "files": [
+        {
+          "path": "registry/styles/macos.css",
+          "type": "registry:style",
+          "target": "@components/../styles/macos.css"
+        }
+      ],
+      "css": {
+        "@import \"@/styles/macos.css\"": {}
+      },
+      "meta": {
+        "generation": "27",
+        "base": "base",
+        "status": "preview"
+      }
+    }
+  ]
+}

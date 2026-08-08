@@ -1,0 +1,11 @@
+node_modules/
+dist/
+public/r/
+playwright-report/
+test-results/
+evals/results/*/native/
+reference/macos-controls/.build/
+reference/macos-controls/references/
+*.xcresult
+.DS_Store
+coverage/tmp/

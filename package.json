@@ -1,0 +1,34 @@
+{
+  "name": "macos-for-shadcn",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A desktop-first macOS style for shadcn components.",
+  "packageManager": "pnpm@10.28.2",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "pnpm --filter showcase dev",
+    "registry:validate": "shadcn registry validate ./registry.json",
+    "registry:build": "shadcn build ./registry.json --output ./public/r",
+    "build": "pnpm run registry:build && pnpm --filter showcase build",
+    "lint": "tsx scripts/check-style.ts && pnpm --filter showcase lint",
+    "typecheck": "tsc -p tsconfig.scripts.json --noEmit && pnpm --filter showcase typecheck",
+    "test": "vitest run",
+    "test:coverage": "tsx scripts/check-coverage.ts",
+    "test:install": "tsx scripts/check-registry-install.ts",
+    "test:a11y": "vitest run tests/accessibility",
+    "test:visual": "vitest run tests/visual",
+    "test:hosts": "tsx scripts/check-hosts.ts",
+    "reference:macos": "swift build --package-path reference/macos-controls",
+    "eval": "tsx scripts/generate-eval-report.ts",
+    "verify": "pnpm lint && pnpm typecheck && pnpm test:coverage && pnpm test && pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "shadcn": "4.16.2",
+    "tsx": "^4.23.11",
+    "typescript": "6.0.3",
+    "vitest": "^4.1.10"
+  }
+}
